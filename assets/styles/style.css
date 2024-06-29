@@ -14,6 +14,7 @@ body {
 }
 .menu-toggle {
   display: hidden;
+  transition: opacity 0.3s ease;
 }
 .jumbotron {
   font-size: 20px;
@@ -213,8 +214,12 @@ footer {
   display: flex;
   justify-content: center;
   padding: 1.5rem;
+  margin-top: 1rem;
   background-color: #17181d;
   color: #fff;
+}
+.img-tentang{
+  object-fit: contain;
 }
 @media screen and (max-width: 1500px) {
   main {
@@ -243,7 +248,9 @@ footer {
     font-size: 20px;
   }
   nav ul.menu {
-    display: none;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
     flex-direction: column;
     position: absolute;
     top: 65px;
@@ -252,15 +259,17 @@ footer {
     background-color: #17181d;
     z-index: 1;
     padding-bottom: 1rem;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
   }
-
+  
   nav ul.menu.active {
-    display: flex;
+    opacity: 1;
+    max-height: 50vh;
   }
 
   nav ul.menu li {
-    margin: 0;
     padding: 0;
+    margin: 0 2.5rem 0 0;
   }
 
   nav ul.menu li a {
@@ -314,7 +323,9 @@ footer {
     font-size: 20px;
   }
   nav ul.menu {
-    display: none;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
     flex-direction: column;
     position: absolute;
     top: 65px;
@@ -323,15 +334,18 @@ footer {
     background-color: #17181d;
     z-index: 1;
     padding-bottom: 1rem;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
   }
-
+  
   nav ul.menu.active {
-    display: flex;
+    opacity: 1;
+    max-height: 50vh;
   }
 
   nav ul.menu li {
     margin: 0;
     padding: 0;
+    margin: 0 2.5rem 0 0;
   }
 
   nav ul.menu li a {
