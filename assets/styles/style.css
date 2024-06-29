@@ -4,12 +4,13 @@ html {
 }
 * {
   box-sizing: border-box;
-  /* border: red solid; */
 }
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
+  width: 100vw;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 .menu-toggle {
@@ -70,6 +71,7 @@ body {
   background-color: #17181d;
   color: #fcd9b8;
   font-size: 25px;
+  border: none;
 }
 nav {
   background-color: #17181d;
