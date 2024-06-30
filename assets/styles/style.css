@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
 }
 .menu-toggle {
-  display: none;
+  display: hidden;
   transition: opacity 0.3s ease;
 }
 .jumbotron {
@@ -128,7 +128,6 @@ main {
   margin-top: 1rem;
   gap: 1rem;
   justify-content: space-between;
-  overflow: hidden;
 }
 main.content {
   display: flex;
