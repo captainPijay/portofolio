@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap");
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  width: 100vw !important;
 }
 * {
   box-sizing: border-box;
@@ -11,7 +13,7 @@ body {
   padding: 0;
   width: 100vw;
   box-sizing: border-box;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 .menu-toggle {
   display: hidden;
@@ -32,7 +34,6 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   height: 89vh;
   width: 100vw;
-  overflow-x: hidden !important;
 }
 .jumbotron .bumping-effect img {
   width: 300px;
@@ -146,7 +147,6 @@ main.content {
   position: relative;
   overflow: auto;
   flex: 1;
-  overflow-x: hidden !important;
   border-radius: 10px;
 }
 .card:nth-child(2) {
@@ -165,7 +165,6 @@ aside {
   color: #fff;
   padding: 2rem;
   box-sizing: border-box;
-  overflow-x: hidden !important;
 }
 main aside article {
   align-self: center;
