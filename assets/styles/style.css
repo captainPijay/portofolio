@@ -374,7 +374,7 @@ footer {
     opacity: 1;
     max-height: 100vh;
     position: absolute;
-    transform: translateY(2rem);
+    transform: translateY(1rem);
   }
 
   nav ul.menu li {
