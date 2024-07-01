@@ -367,12 +367,14 @@ footer {
     background-color: #17181d;
     z-index: 1;
     padding-bottom: 1rem;
-    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out, transform 0.5s ease-in-out;
   }
 
   nav ul.menu.active {
     opacity: 1;
     max-height: 100vh;
+    position: absolute;
+    transform: translateY(2rem);
   }
 
   nav ul.menu li {
