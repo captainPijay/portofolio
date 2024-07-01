@@ -372,7 +372,7 @@ footer {
 
   nav ul.menu.active {
     opacity: 1;
-    max-height: 50vh;
+    max-height: 100vh;
   }
 
   nav ul.menu li {
